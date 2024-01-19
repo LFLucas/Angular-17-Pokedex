@@ -2,3 +2,14 @@
 @for(pkm of pokeList?.results; track pkm){
     <poke-pokemon-card [pokemon]="pkm.pokemon"/>
 }
+
+<nav>
+
+
+    <button (click)="prevPage()"><</button>
+    <div>
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+    <button (click)="nextPage()">></button>
+</nav>

@@ -9,15 +9,25 @@ import { PokeData, Pokemon } from '../../../core/interfaces/Pokemon.interface';
 })
 export class PokemonListComponent implements OnInit{
   public pokeList?: PokeData 
+  public page: number = 0
   
   constructor( private context: ContextService ){}
   
   ngOnInit(): void {
-    this.context.fetch().subscribe({
+    this.nextPage()
+  }
+
+  nextPage(){
+    this.context.fetchAll(this.page++).subscribe({
       next:  (data) => this.pokeList = data,
       error: (error) => console.log(error),
       complete: () => console.log("complete") })
   }
 
-  
+  prevPage(){
+    this.context.fetchAll(this.page--).subscribe({
+      next:  (data) => this.pokeList = data,
+      error: (error) => console.log(error),
+      complete: () => console.log("complete") })
+  }
 }

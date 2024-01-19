@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    transition: .5s;    
+}
+
+
+body{
+    overflow: hidden;
+    width: 100%;
+    height:100vh;
+    background-color: rgb(19, 19, 19);
+    background-image: url("./assets/images/perfectbg.gif");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: url("./assets/images/cursor.gif"), auto;
+
+   
+
+}
+
+poke-root{
+    animation: slide-up;
+    animation-duration: 5s;
+}
+
+.poke-font{
+    font-size: 1.5rem;
+    color: rgba(255, 217, 0, 0.884); 
+    text-decoration: none;
+    font-family: Pokemon-Solid;
+    font-weight: 1rem;
+    text-shadow: 1px -1px rgb(143, 122, 2), 
+                 
+                 -2px 2px rgb(58, 58, 194),
+                 2px -2px rgb(58, 58, 194),
+                 2px 2px rgb(58, 58, 194),
+                 -2px -2px rgb(58, 58, 194),
+                 
+                 -3px 0 rgb(58, 58, 194),
+                 3px 0 rgb(58, 58, 194),
+                 0 3px rgb(58, 58, 194),
+                 0 -3px rgb(58, 58, 194);
+    letter-spacing: 3px;
+    
+}
+
+.poke-font:hover{
+    transform: scale(1.2);
+}
+
+@font-face{
+    font-family: "Pokemon-Hollow";
+    src: url("./assets/fonts/Pokemon\ Hollow.ttf");
+}
+
+@font-face{
+    font-family: "Pokemon-Solid";
+    src: url("./assets/fonts/Pokemon\ Solid.ttf");
+}
+
+@keyframes slide-up {
+    0%, 90%{ opacity: 0 }
+    100%{ opacity: 1 }
+}
