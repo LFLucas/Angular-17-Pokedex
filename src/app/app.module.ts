@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './core/shared-components/toolbar/toolbar.component';
 import { FeaturesModule } from './features/features.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ContextService } from './core/services/context/context.service';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,9 @@ import { FeaturesModule } from './features/features.module';
     BrowserModule,
     AppRoutingModule,
     ToolbarComponent,
-    FeaturesModule
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ContextService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

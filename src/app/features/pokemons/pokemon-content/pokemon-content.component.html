@@ -1,0 +1,34 @@
+
+<div class="pokemon">
+    <h3 class="poke-font">{{pokemon?.name}}</h3>
+    <img [src]="pokemon?.sprites?.other?.dream_world?.front_default" [alt]="pokemon?.name" width="300px" height="300px">
+    <ol class="types-list">
+        @for(type of pokemon?.types; track type){
+            <li>{{type.type.name}}</li>
+        }
+    </ol>
+</div>
+
+<div class="information">
+    <h5 class="poke-font">Information</h5>
+    <p>Height: {{pokemon?.height}}</p>
+    <p>Weight: {{pokemon?.weight}}</p>
+</div>
+
+<div class="habilities">
+    <h5 class="poke-font">Habilities</h5>
+    <ol class="abilities-list">
+        @for(ability of pokemon?.abilities; track ability){
+            <li>{{ability.ability.name}}</li>
+        }
+    </ol>
+</div>
+
+<div class="status">
+    <h5 class="poke-font">Status</h5>
+    <ol class="status-list">
+        @for(status of pokemon?.stats; track status){
+            <li>{{status.stat.name}}: {{status.base_stat}}</li>
+        }
+    </ol> 
+</div>

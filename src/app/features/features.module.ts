@@ -1,17 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BerriesModule } from './berries/berries.module';
-
-
+import { PokemonsModule } from './pokemons/pokemons.module';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    BerriesModule
+    PokemonsModule
   ],
-  exports: [
-    BerriesModule
-  ]
+  exports: [ PokemonsModule ]
 })
+
 export class FeaturesModule { }

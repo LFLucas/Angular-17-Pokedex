@@ -1,6 +1,7 @@
 :host{
     width: 100%;
     height: fit-content;
+    
 }
 
 :host div{
@@ -9,6 +10,7 @@
     width: 100%;
     justify-content: space-around;
     padding: 10px;
+
 }
 
 :host .navigation *{
@@ -20,6 +22,7 @@
     visibility: hidden;
     opacity: 0;
     transition: .5s;
+
 
 }
 
@@ -52,26 +55,5 @@
     transform: scale(1.2);
 } */
 
-.poke-font{
-    font-size: 1.5rem;
-    color: rgba(255, 217, 0, 0.884); 
-    text-decoration: none;
-    font-family: Pokemon-Solid;
-    font-weight: 1rem;
-    text-shadow: 1px -1px rgb(143, 122, 2), 
-                 
-                 -2px 2px rgb(58, 58, 194),
-                 2px -2px rgb(58, 58, 194),
-                 2px 2px rgb(58, 58, 194),
-                 -2px -2px rgb(58, 58, 194),
-                 
-                 -3px 0 rgb(58, 58, 194),
-                 3px 0 rgb(58, 58, 194),
-                 0 3px rgb(58, 58, 194),
-                 0 -3px rgb(58, 58, 194);
-}
 
-.poke-font:hover{
-    transform: scale(1.2);
-}
 
