@@ -4,9 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './core/shared-components/toolbar/toolbar.component';
-import { FeaturesModule } from './features/features.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ContextService } from './core/services/context/context.service';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BerriesModule } from './features/berries/berries.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,8 @@ import { ContextService } from './core/services/context/context.service';
     AppRoutingModule,
     ToolbarComponent,
     HttpClientModule,
+    ReactiveFormsModule,
+    BerriesModule
   ],
   providers: [ContextService],
   bootstrap: [AppComponent]

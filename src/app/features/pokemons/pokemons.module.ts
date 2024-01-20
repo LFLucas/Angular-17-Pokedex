@@ -5,12 +5,10 @@ import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 import { PokemonContentComponent } from './pokemon-content/pokemon-content.component';
 import { RouterModule } from '@angular/router';
 import { PokemonsRoutingModule } from './pokemons-routing.module';
-
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    
     PokemonListComponent,
     PokemonCardComponent,
     PokemonContentComponent,
@@ -18,7 +16,8 @@ import { PokemonsRoutingModule } from './pokemons-routing.module';
   imports: [
     PokemonsRoutingModule,
     CommonModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   exports: [
     PokemonListComponent,

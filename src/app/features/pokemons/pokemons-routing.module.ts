@@ -7,7 +7,6 @@ import { PokemonContentComponent } from './pokemon-content/pokemon-content.compo
 const routes: Routes = [
   {path: "", component: PokemonListComponent},
   {path: ":id", component: PokemonContentComponent},
-
 ];
 
 @NgModule({

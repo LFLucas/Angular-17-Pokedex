@@ -4,12 +4,12 @@
 }
 
 <nav>
-
-
-    <button (click)="prevPage()"><</button>
+    <button (click)="prevPage()" [disabled]="!pokeList?.previous"><</button>
     <div>
-        <input type="text" placeholder="Search">
-        <button>Search</button>
+        <form [formGroup]="searchGroup">    
+            <input type="text" placeholder="Search" formControlName="search">
+            <button (click)="search()">Search</button>
+        </form>   
     </div>
-    <button (click)="nextPage()">></button>
+    <button (click)="nextPage()" [disabled]="!pokeList?.next">></button>
 </nav>
