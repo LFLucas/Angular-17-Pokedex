@@ -1,7 +1,7 @@
 
 <div class="pokemon">
     <h3 class="poke-font">{{pokemon?.name}}</h3>
-    <img [src]="pokemon?.sprites?.other?.dream_world?.front_default" [alt]="pokemon?.name" width="300px" height="300px">
+    <img [src]="pokemon?.sprites?.other?.dream_world?.front_default || '../../../../assets/images/bg.png'" [alt]="pokemon?.name" width="300px" height="300px">
     <ol class="types-list">
         @for(type of pokemon?.types; track type){
             <li>{{type.type.name}}</li>

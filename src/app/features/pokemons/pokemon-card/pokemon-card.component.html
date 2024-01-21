@@ -1,2 +1,2 @@
-<img [src]="pokemon.sprites.other?.dream_world?.front_default" alt="Pokemon Image" width="300px" height="300px">
+<img [src]="pokemon.sprites.other?.dream_world?.front_default || '../../../../assets/images/bg.png'" alt="Pokemon Image" width="300px" height="300px">
 <p class="poke-font">{{pokemon.name}}</p>

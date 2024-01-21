@@ -14,7 +14,7 @@ export class PokemonCardComponent {
   
   @HostListener("click")
   seeDetails(event: MouseEvent){
-    this.router.navigate([`pokemons/${this.pokemon.id}`])  
+    this.router.navigate([`/${this.pokemon.id}`])  
   }
 
 }

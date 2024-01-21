@@ -1,0 +1,55 @@
+:host{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 100px 0;
+}
+
+:host nav *{
+    font-size: 1.2rem;
+}
+
+:host nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    top: 90%;
+    font-size: 1.2rem;
+}
+
+:host nav button{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px ;
+    border: none;
+    outline: none;
+}
+:host nav form{
+    display:flex;
+    justify-content: space-around;
+    width: 50%;
+    height: 50px;
+    padding: 0 20px;
+}
+
+
+:host nav input[type=text]{
+    border-radius: 50px;
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 0 20px;    
+}
+
+:host nav form button{
+    background-image: url("../../../../assets/images/lupa.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+

@@ -3,7 +3,7 @@
 export interface BerryData {
     count:    number;
     next:     string;
-    previous: null;
+    previous?: string;
     results:  BerrySource[];
 }
 

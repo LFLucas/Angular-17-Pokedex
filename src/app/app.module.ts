@@ -7,7 +7,6 @@ import { ToolbarComponent } from './core/shared-components/toolbar/toolbar.compo
 import { HttpClientModule } from '@angular/common/http';
 import { ContextService } from './core/services/context/context.service';
 import { ReactiveFormsModule } from '@angular/forms';
-import { BerriesModule } from './features/berries/berries.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { BerriesModule } from './features/berries/berries.module';
     ToolbarComponent,
     HttpClientModule,
     ReactiveFormsModule,
-    BerriesModule
   ],
   providers: [ContextService],
   bootstrap: [AppComponent]

@@ -1,0 +1,17 @@
+:host{
+    display: flex;
+    width: inherit;
+    height: inherit;
+    overflow: scroll;
+}
+
+:host::-webkit-scrollbar{
+    display: none;
+}
+
+poke-toolbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
